@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自定义checkandradio</title>
+<style type="text/css">
+*{
+	padding:0;
+   margin:0;
+}
+/*checkbox*/
+input{
+	display:none;
+}
+ .one label{
+    display: inline-block;
+	width:20px;
+	height: 20px;
+	background:url(checkandradio.png);
+	background-position: -22px -9px;
+	margin:20px;
+}
+input[type='checkbox']:checked+label {
+
+	background-position: -56px -9px;
+}
+/*radio*/
+
+.two label{
+    display: inline-block;
+	width:20px;
+	height: 20px;
+	background:url(checkandradio.png);
+	background-position: -22px -27px;
+	margin:20px;
+}
+input[type='radio']:checked+label {
+
+	background-position: -56px -27px;
+}
+
+
+</style>
+</head>
+<body>
+<form class="one">
+	<input type="checkbox" id="checkBox1"/>
+	<label for="checkBox1"></label> 
+	<input type="checkbox" id="checkBox2" />
+	<label for="checkBox2"></label> 
+</form> 
+<form class="two">
+	<input type="radio" id="radio1" name="radio"/>
+	<label for="radio1"></label> 
+	<input type="radio" id="radio2" name="radio" />
+	<label for="radio2"></label> 
+</form>  	
+</body>
+</html>
