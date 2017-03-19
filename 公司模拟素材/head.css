@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0px;
+margin:0px;}
+
+#mainbody{
+	background:#fff ;
+	width:80%;
+	margin:0 10%;					
+	height:1890px;
+	
+	}
+.header{
+	height:40px;
+	background:#ffffff;
+		}
+/*书，新世界 图片和字体*/
+ .header  .littlebook {
+	     float:left;
+		 margin-left:45px;
+		 font-size:14px;
+		 font-weight:bold;
+		 height:40px;
+		 }
+		
+ .header p{
+             float:right;
+            margin :5px 0px 0px 15px;
+			font-size:20px; 
+			 }
+			 
+/*导航菜单栏*/
+.header ul{
+	list-style-type:none;
+	margin-right:100px;
+	
+	}
+ .header li{
+	 font-weight:80;
+	 font-size:12px;
+	float:right;
+	padding:10px;
+	}
+ .header li:hover {
+	color:red;
+	 border-bottom:red 3px solid;
+	}	
+	/* 登入*/
+  .header .login{
+	  float:right;
+	  color:red;
+	  margin:9px 10px 0px 0px;}	 
+		
+		
+		
+		
+		
+		
+	#place{
+		width:100%;
+		background:url(content4-background.jpg);
+	 height:341px;}
+ 
+

@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bigpicture{
+	background-image:url(si.png);
+	background:no-repeat;
+	}
+.bigpicture img{
+width:100%;
+	}
+	
+/*四个图标和句子白色背景的newworld，用table表现*/	
+.four-sentence{
+	background-color:#fff;
+	height:200px;
+	text-align:center;
+	font-size:12px;}
+	
+	
+.four-sentence p{
+	padding:0 30px ; }
+.four-sentence .text-one{
+	border-right: #E3CECF solid 2px;
+	}
+	
+/*大的书籍图片和“关于新世界，你不知道的还有什么？”*/
+
+.aboutnewworld{
+  height:250px;
+ font-size:36px;
+ color:#B4A8A9;
+  text-align:center;
+  background-color:#E7E4E4;
+	}
+	
+.aboutnewworld img{
+   margin:35px 10% 20px 10%;	
+}
+ 
+/*地图区域*/
+.place  .one{
+   font-size:20px;
+   color:#ffffff;
+   padding:30px 0 20px 0; 
+}
+
+.place .two{
+color:#ffffff;
+margin-bottom:20px;
+font-size:10px;
+margin-bottom:30px;
+}
+ .place .three{
+ 	width:25px;
+ 	border-top: #ffffff 3px solid;
+ 	margin:0 auto;
+ }
+	
+.place{
+		width:100%;
+		background:url(content4-background.jpg);
+	    height:341px;
+		text-align:center;	 
+	 }
+ .place select{
+ 	width:180px;
+ 	padding:0  10px;
+ 	margin-right:20px;
+ 	height:30px;
+ 	color:#6c6666;
+    background-color: #ffffff;
+/*清除不同浏览器的差异*/
+     appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+/*background :url() no-repeat 95% 50% 简便形式，为了记住一下属性所以没用*/
+  background-image: url(xia.png);
+  background-position:95% 50%;
+  background-repeat: no-repeat;
+ }
+ /*清除ie的下拉样式*/
+ .place select::-ms-expand { display: none; }
+
+
+.place input{
+width:200px;
+height:30px;
+background-color:#ED3E41;
+color:#ffffff;
+}
+/*上海，香港，深圳，北京活动*/
+#four-active{
+	background-color: #f2f2f2;
+	padding:60px 0 60px 5%;
+	height:400px;
+	text-align: center;
+	font-family: "微软雅黑";
+	color:#a9a9a9;
+	font-size:10px;
+}
+#four-active li{ 
+list-style-type:none;
+float:left;
+width:20%;
+ margin:20px;
+ 
+ }
+ 
+ #four-active img{
+ 	padding:5px;
+ 	background-color:#ffffff;
+ }
+ #four-active p{
+font-size:16px;
+margin-bottom:10px;
+color:#696969;
+}
+ #four-active  .caodan{
+ 	font-size:25px;
+ 	font-weight:400;
+ 	letter-spacing: 10px
+ }
+ /*六个模块一如既往用table来做newworld-time*/
+ #newworld-time table{
+ 	width:100%;
+   border-collapse:collapse;
+ }
+ #newworld-time  td{
+    width:33.3333%;
+    height:400px;
+ }
+ #newworld-time #time1
+ {
+ 	background-image: url(七.png);
+ 	background-position: 0 -1195px;
+ 	background-repeat: no-repeat;
+ 	background-size:152%;
+ }
+
+ .six-block-insert{
+ 	text-align: center;
+ 	margin:30%;
+ }
+ 
+ .six-block-insert span{
+ 	font-size:16px;
+ 	display: block;
+ 	font-family: "微软雅黑";
+  }
+ .six-block-insert p{
+  	border: 1px solid red;
+  	color:red;
+  	font-size:20px;
+  	margin-top:10px; 
+  }
+  .six-block #six-block-3{
+
+  }
+  .six-block #six-block-4{
+    	background-color:#cd5c5c;
+    	color:#ffffff;
+}
+  .six-block #six-block-4 p{
+  border-color:#ffffff;
+  color:#ffffff;
+  }
+  .six-block #six-block-4 #able1{
+  	border-bottom:1px #ffffff solid;
+}
+  .six-block #six-block-5 #able2{
+  	border-bottom:1px #808080 solid;
+}
+#able1,#able2 ,#able3{
+	 width:25px; 
+  	 margin:0 auto;
+} 
+  #othertu {
+  	background: url(tuxiang.png) 95% no-repeat;
+}
+/*志愿者volunteer*/
+#volunteer{
+	font-family:"微软雅黑";
+}
+#volunteer-firstpart{
+	text-align: center;
+	width:40%;
+    margin:0 30%;
+    padding:30px 0px 40px 0px;
+}
+#volunteer #able3{
+	border-bottom:2px red solid;
+	margin-bottom:10px;
+}
+#volunteer span{
+	display:inline-block;
+    color:#789;
+    margin-top:5px;
+}
+#volunteer-left{
+width:30%;
+ margin:0 3% 0 6%;
+float:left;
+}
+#volunteer img{
+	padding: 0 5px 0 80%;
+ 
+}
+#volunteer h4{
+	margin-top:25px;
+}
+
+#volunteer-right{
+	float:right;
+	width:60%;
+	margin-top:25px;
+	 font-size: 10px;
+	 color:#808080;
+
+} 
+#volunteer-right p{
+  display:inline-block;
+  width:46%;
+  padding:1%;
+  margin:1%;
+  background-color:#f5f5f5;
+} 
+#volunteer-right div{
+	width:96%;
+	background-color:#f5f5f5; 
+	margin-left:1%;
+	padding: 1%;
+	height:150px;
+} 
+#volunteer-right #adapt{
+	width:96%;
+	text-align:center;
+}
