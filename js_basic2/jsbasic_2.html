@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表升序排列（>60）</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+//获得ul元素
+ var ul=document.getElementById("aqi-list"); 
+
+ var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100],
+  ["上京", 39],
+  ["泉州", 48],
+  ["窄州", 70],
+  ["成被", 91],
+  ["东安", 120]
+];
+
+//升序排列
+(function(){
+var newarray=new Array(aqiData.length); 
+for (var i = 1; i < aqiData.length; i++) {
+	  for (var j = 0; j < aqiData.length-i; j++) {
+	    if(aqiData[j][1]>aqiData[j+1][1]){
+	    	var address;
+	    	var num;
+           //交换位置
+           address=aqiData[j][0];
+           aqiData[j][0]=aqiData[j+1][0];
+           aqiData[j+1][0]=address;
+           //交换数字
+           num=aqiData[j][1];
+           aqiData[j][1]=aqiData[j+1][1];
+           aqiData[j+1][1]=num;
+	    }
+	   }
+}
+})();
+//将数组排列之后进行输出
+(function () { 
+    var  count=0;
+  for(var i=0;i<aqiData.length;i++){
+  var newli=document.createElement("li");
+     if(aqiData[i][1]>60){
+          count++;
+       ul.appendChild(newli);
+      newli.innerHTML="第"+count+"个空气指数大于60的是"+aqiData[i][0]+"   他的空气指数是"+aqiData[i][1];
+  }
+}
+}
+)();
+
+
+</script>
+</body>
+</html>
